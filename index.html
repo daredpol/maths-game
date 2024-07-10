@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/media.css">
+        <title>Maths Game</title>
+    </head>
+    <body>
+        <marquee id="marq">Thank you for checking out my math game. I hope you like it! Please, don't forget to give your feedback</marquee>
+        <div id="gamecontainer">
+            <div id="tabletype">
+                <div class="inp">
+                    <label for="tableselect">
+                        <span id="moder">Number Range</span>
+                    </label>
+                    <input
+                        id="tableselect"
+                        name="tableselect"
+                        type="number"
+                        min="3"
+                    >
+                </div>
+                <div class="inp">
+                    <label for="duration">Time (min)</label>
+                    <input
+                        type="number"
+                        id="duration"
+                        type="number"
+                        min="0.5"
+                    >
+                </div>
+            </div>
+            <p id="valuecheck"></p>
+            <div id="scorescreen">
+                Score:
+                <span id="score">0</span>
+            </div>
+            <div id="tryagain">
+                Incorrect
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="questionBox"></div>
+            <div id="answerhead">
+                Select the correct answer
+            </div>
+            <div id="answerBox">
+                <div id="box1" class="boxes"></div>
+                <div id="box2" class="boxes"></div>
+                <div id="box3" class="boxes"></div>
+                <div id="box4" class="boxes"></div>
+            </div>
+            <div id="activatestop">
+                Start game
+            </div>
+            <div id="timelapse">
+                Time:
+                <span id="time" style="font-family: monospace, arial, cursive; font-weight: 700;">-</span>
+                <span id="secz">seconds</span>
+            </div>
+            <div id="gameover">
+                <div id="gameover-text">
+                    <p>Game Over !!!</p>
+                    <p>
+                        Your score is
+                        <span id="result"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modeselect">
+            <div id="modecontainer">
+                <h4 id="modeHead">Game Mode</h4>
+                <div class="modegroup">
+                    <div>
+                        <input
+                            type="radio"
+                            id="multiplication"
+                            name="mathtype"
+                            value="multiply"
+                            class="modeselect"
+                            checked
+                        >
+                        <label for="division">Multiplication</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="addition"
+                            name="mathtype"
+                            value="add"
+                            class="modeselect"
+                        >
+                        <label for="addition">Addition</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="division"
+                            name="mathtype"
+                            value="divide"
+                            class="modeselect"
+                        >
+                        <label for="division">Division</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="subtraction"
+                            name="mathtype"
+                            value="subtract"
+                            class="modeselect"
+                        >
+                        <label for="subtraction">Subtraction</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="square"
+                            name="mathtype"
+                            value="square"
+                            class="modeselect"
+                        >
+                        <label for="square">
+                            Square (x
+                            <sup>2</sup>
+                            )
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://dareogundeji.host20.uk" id="homepager">Visit Homepage</a>
+        <script src="index.js"></script>
+    </body>
+</html>
